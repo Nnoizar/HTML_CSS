@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML & CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <a id="html-link" href="https://www.w3schools.com/html/default.asp">Learn HTML</a>
+        <a id="css-link" href="https://www.w3schools.com/css/default.asp">Learn CSS</a>
+
+    </header>
+
+    <main>
+        <section id="intro" aria-labelledby=" seksjon-tittel">
+            <h2 id="seksjon-tittel">Introduction</h2>
+            <p>Welcome! On this website, you will learn how to create your first basic website.</p>
+        </section>
+        <div id="imgwrapper">
+            <img src="assets/HTML5_logo.png" alt="html logo">
+            <img src="assets/CSS3_logo.png" alt="html logo">
+        </div>
+        <div class="topicwrapper">
+            <div class="html-box">
+                <section aria-label="HTML-section">
+                    <article aria-labelledby="first-html">
+                        <h4 id="first-html">Your first HTML file</h4>
+                        <ol>
+                            <li>
+                                <p>
+                                    <strong>Create a new file</strong>: Open a text editor (like Notepad or Visual
+                                    Studio
+                                    Code) and
+                                    create a new file. Save it with the <code>.html</code> extension
+                                    (e.g.,<code>index.html</code>).
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Start with the HTML structure</strong>: Your document should have a basic
+                                    structure,
+                                    which includes a <code>&lt;!DOCTYPE&gt;</code> declaration, an opening
+                                    <code>&lt;html&gt;</code>
+                                    tag, a <code>&lt;head&gt;</code> section, and a <code>&lt;body&gt;</code> section.
+                                    Here is an example:
+                                </p>
+                            </li>
+                        </ol>
+                        <pre>
+
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    &lt;title>My First HTML Page&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;h1 class="yellowfy">Hello, World!&lt;/h1>
+    &lt;p>This is my first HTML document.&lt;/p>
+&lt;/body>
+&lt;/html>
+                        </pre>
+                    </article>
+            </div>
+
+            <article>
+            </article>
+            </section>
+            <div class="css-box">
+                <section aria-label="css-section">
+                    <article aria-labelledby="css-link">
+                        <h4>Linking a css sheet</h1>
+                            <ol>
+                                <li>
+                                    <p>
+                                        <strong>Create a new file</strong>: Open a text editor (like Notepad, Visual
+                                        Studio
+                                        Code, or Sublime Text) and create a new file. Save it with a <code>.css</code>
+                                        extension, for example, <code>styles.css</code>.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <strong>Link your CSS file to your HTML</strong>: In your HTML file, link the
+                                        CSS
+                                        file
+                                        within the <code>&lt;head&gt;</code> section using the <code>&lt;link&gt;</code>
+                                        tag:
+                                    </p>
+                                </li>
+                            </ol>
+                            <pre>
+
+&lt;link rel="stylesheet" 
+type="text/css" href="styles.css">
+
+                            </pre>
+                            <p>Write your CSS rules: In your styles.css file, use CSS selectors to target HTML elements
+                                and define their styles. For example:</p>
+
+                            <pre>
+
+/*This affects the paragraph tag.*/
+p{
+    color: blue;  /* Sets text color to blue */
+    font-size: 16px; /* Sets font size to 16px */
+}
+
+/* Sets background color to yellow 
+in this instance we use this class to set color 
+of h1 to yellow*/
+.yellowfy {
+    color: yellow; 
+}
+                            </pre>
+                    </article>
+
+                    <article>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; 2020 leagal information</p>
+    </footer>
+</body>
+
+</html>
